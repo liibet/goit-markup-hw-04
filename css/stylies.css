@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+
+:root {
+    --hover-color: #2196f3;
+    --text-color: #212121;
+    --text-description: #757575;
+    --banner-color: #2f303a;
+    --white: #ffffff;
+    --white-opacity: #ffffff99;
+}
+
+body {
+    --text-color: #212121;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+/*  */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 var(--container-padding);
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.header .navbar .navbar_menu {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+}
+
+.lista_contactos {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+}
+
+
+.logo {
+    color: var(--hover-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.navbar_menu .page:hover,
+.navbar_menu .page:focus-visible,
+.navbar_menu .page.current,
+.lista_contactos .item:hover,
+.lista_contactos .item:focus {
+    color: var(--hover-color);
+}
+
+.navbar_menu li,
+.lista_contactos li {
+    font-weight: 500;
+    line-height: 1;
+}
+
+.navbar_menu li a {
+    color: var(--text-color);
+}
+
+.navbar_conctatos {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.lista_contactos li a {
+    color: var(--text-description);
+}
+
+.banner {
+    background-color: var(--banner-color);
+    text-align: center;
+    padding: 170px;
+}
+
+.banner_title {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--white);
+}
+
+.btn_servicio {
+    background-color: var(--hover-color);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 800;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.lista_botones button,
+.btn_servicio {
+    cursor: pointer;
+}
+
+.filtros .lista_botones ol button:hover,
+.filtros .lista_botones ol button.current {
+    color: var(--white);
+    background-color: var(--hover-color);
+}
+
+.filtros .lista_botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.filtros {
+    padding: 80px 0;
+}
+
+
+/* bady*/
+
+.caracteristicas {
+    padding: 0 94px 0;
+}
+
+.lista_caracteristicas {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.lista_caracteristicas .elemento_caracteristica {
+    list-style: none;
+    width: 270px;
+}
+
+.lista_caracteristicas .elemento_caracteristica .titulo_caracteristica {
+    height: 30px;
+    text-transform: uppercase;
+}
+
+.descripcion_caracteristicas,
+.trabajo {
+    color: var(--text-description);
+}
+
+/* a que nos dedicamos */
+
+.presentacion {
+    padding: 0 94px 0;
+}
+
+.presentacion h2 {
+    font-size: 32px;
+    font-weight: 700px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.lista_presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* nuestro equipo */
+
+.equipo {
+    background-color: rgb(245, 244, 250);
+}
+
+.equipo h2 {
+    font-size: 32px;
+    font-weight: 700px;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.lista_equipo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 60px;
+}
+
+.lista_equipo .elemento_equipo {
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.lista_equipo .elemento_equipo p {
+    margin-bottom: 20px;
+}
+
+.tarjetas {
+    padding: 94px;
+}
+
+.tarjetas .tarjetas_portafolio {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.tarjetas .tarjetas_portafolio .tarjeta_portafolio {
+    width: 370px;
+    height: 404px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--text-color);
+    padding: 60px var(--container-padding);
+}
+
+.info_empresa p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.direccion_empresa,
+.descripcion_redes {
+    color: var(--white);
+}
+
+.correo_empresa,
+.telefono_empresa {
+    color: var(--white-opacity);
+}
+
+/* estilos 3 tarea *
